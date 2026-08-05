@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NIA 520 - Mapa Mental</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header">
+<div class="container">
+<div class="logo">
+<svg viewBox="0 0 40 40" class="logo-icon">
+<circle cx="20" cy="20" r="18" fill="none" stroke="#9d7cbf" stroke-width="2"/>
+<path d="M12 20 L20 12 L28 20 L20 28 Z" fill="#9d7cbf" opacity="0.3"/>
+<path d="M16 20 L20 16 L24 20 L20 24 Z" fill="#9d7cbf"/>
+</svg>
+<span>NIA Auditoria</span>
+</div>
+<nav class="nav">
+<a href="index.html" class="nav-link">Inicio</a>
+<a href="nia520.html" class="nav-link active">NIA 520</a>
+<a href="nia530.html" class="nav-link">NIA 530</a>
+<a href="tema.html" class="nav-link">Tema Asignado</a>
+</nav>
+</div>
+</header>
+<main class="main">
+<section class="hero">
+<div class="container">
+<h1 class="hero-title">Mapa Mental Interactivo</h1>
+<p class="hero-subtitle">NIA 520 - Procedimientos Analiticos</p>
+</div>
+</section>
+<section class="content">
+<div class="container">
+<div class="nia-content">
+
+<section class="section">
+<h2 class="section-title">Mapa Mental</h2>
+<div class="map-controls" style="display:flex;gap:8px;margin-bottom:12px;align-items:center;">
+<span style="color:#737373;font-size:0.9rem;margin-right:8px;">Controles:</span>
+<button onclick="mmZoom('520',0.2)" style="background:#9d7cbf;color:#fff;padding:8px 14px;border:none;border-radius:6px;cursor:pointer;font-weight:600;">+ Zoom</button>
+<button onclick="mmZoom('520',-0.2)" style="background:#e5e5e5;color:#525252;padding:8px 14px;border:none;border-radius:6px;cursor:pointer;font-weight:600;">- Zoom</button>
+<button onclick="mmReset('520')" style="background:#e5e5e5;color:#525252;padding:8px 14px;border:none;border-radius:6px;cursor:pointer;font-weight:600;">Restablecer</button>
+</div>
+<div class="map-hint" style="background:#f8f5fc;border-radius:8px;padding:12px 16px;margin-bottom:16px;color:#737373;font-size:0.9rem;">
+Usa la rueda del mouse para hacer zoom, arrastra para mover el mapa y haz clic en los nodos para ver mas informacion.
+</div>
+<div id="mm-520" class="mindmap-container" style="overflow:hidden;border-radius:12px;background:#fafafa;border:1px solid #e5e5e5;">
+<svg viewBox="0 0 900 500" width="100%" height="480">
+<g>
+<rect class="mm-node" x="350" y="210" width="200" height="60" rx="30" fill="#f8f5fc" stroke="#9d7cbf" stroke-width="2" data-info='{"title":"NIA 520","desc":"Procedimientos Analiticos: evaluaciones de informacion financiera mediante analisis de relaciones plausibles."}'/>
+<text x="450" y="240" text-anchor="middle" fill="#9d7cbf" font-size="14" font-weight="600">NIA 520</text>
+<text x="450" y="258" text-anchor="middle" fill="#9d7cbf" font-size="11">Procedimientos Analiticos</text>
+
+<line x1="350" y1="240" x2="180" y2="120" stroke="#b8a5d3" stroke-width="2"/>
+<rect class="mm-node" x="60" y="90" width="170" height="55" rx="10" fill="#f8f5fc" stroke="#9d7cbf" stroke-width="2" data-info='{"title":"Definicion","desc":"Evaluaciones de informacion financiera mediante analisis de relaciones plausibles entre datos."}'/>
+<text x="145" y="122" text-anchor="middle" fill="#9d7cbf" font-size="11" font-weight="600">Definicion</text>
+
+<line x1="350" y1="270" x2="180" y2="380" stroke="#b8a5d3" stroke-width="2"/>
+<rect class="mm-node" x="60" y="355" width="170" height="55" rx="10" fill="#f8f5fc" stroke="#9d7cbf" stroke-width="2" data-info='{"title":"Objetivos","desc":"Obtener evidencia relevante y confiable y formarse una conclusion general."}'/>
+<text x="145" y="387" text-anchor="middle" fill="#9d7cbf" font-size="11" font-weight="600">Objetivos</text>
+
+<line x1="550" y1="240" x2="720" y2="120" stroke="#b8a5d3" stroke-width="2"/>
+<rect class="mm-node" x="660" y="90" width="170" height="55" rx="10" fill="#f8f5fc" stroke="#9d7cbf" stroke-width="2" data-info='{"title":"Momentos","desc":"Planeacion, Ejecucion y Finalizacion de la auditoria."}'/>
+<text x="745" y="122" text-anchor="middle" fill="#9d7cbf" font-size="11" font-weight="600">Momentos de Aplicacion</text>
+
+<line x1="550" y1="270" x2="720" y2="380" stroke="#b8a5d3" stroke-width="2"/>
+<rect class="mm-node" x="660" y="355" width="170" height="55" rx="10" fill="#f8f5fc" stroke="#9d7cbf" stroke-width="2" data-info='{"title":"Datos","desc":"Utiliza datos financieros y no financieros para las evaluaciones."}'/>
+<text x="745" y="387" text-anchor="middle" fill="#9d7cbf" font-size="11" font-weight="600">Datos Financieros y No Financieros</text>
+</g>
+</svg>
+</div>
+<div id="mm-detail-520" style="display:none;margin-top:16px;padding:20px;background:#f8f5fc;border-radius:12px;border:1px solid #d4c8e6;"></div>
+</section>
+
+<section class="section">
+<div class="nav-buttons" style="display:flex;justify-content:space-between;gap:16px;">
+<a href="nia520.html" class="resource-link" style="text-decoration:none;">&larr; Volver a NIA 520</a>
+<div style="display:flex;gap:16px;">
+<a href="nia520_audio.html" class="resource-link" style="text-decoration:none;">Audio &rarr;</a>
+<a href="nia520_quiz.html" class="resource-link" style="text-decoration:none;">Cuestionario &rarr;</a>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p>&copy; 2026 NIA Auditoria.</p>
+</div>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
