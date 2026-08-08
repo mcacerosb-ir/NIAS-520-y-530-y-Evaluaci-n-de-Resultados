@@ -125,23 +125,28 @@ function mmReset(id) {
 // ===== QUIZ FUNCTIONS =====
 var qs = {
     '520': [
-        { q: 'Objetivo principal de NIA 520?', o: ['Reemplazar pruebas de detalle', 'Obtener evidencia relevante y confiable', 'Reducir alcance', 'Eliminar pruebas sustantivas'], a: 1 },
-        { q: 'Momentos para aplicar procedimientos analiticos?', o: ['Solo planeacion', 'Solo ejecucion', 'Planeacion, ejecucion y finalizacion', 'Solo finalizacion'], a: 2 },
-        { q: 'Que son los procedimientos analiticos?', o: ['Pruebas de controles', 'Evaluaciones mediante analisis de relaciones plausibles', 'Calculos estadisticos', 'Entrevistas'], a: 1 },
-        { q: 'Que tipo de datos se usan?', o: ['Solo financieros', 'Solo no financieros', 'Financieros y no financieros', 'Solo historicos'], a: 2 },
-        { q: 'Que debe investigar el auditor?', o: ['Solo el monto', 'Naturaleza, causa e inconsistencias', 'Nada', 'Solo comparar'], a: 1 }
+        { q: '¿Cuál es el objetivo principal de los procedimientos analíticos según la NIA 520?', o: ['Reemplazar las pruebas de detalle', 'Obtener evidencia de auditoría relevante y confiable', 'Reducir el alcance de la auditoría', 'Eliminar la necesidad de pruebas sustantivas'], a: 1 },
+        { q: '¿En qué momentos se aplican procedimientos analíticos según la NIA 520?', o: ['Solo en la planeación', 'Solo en la ejecución', 'En la planeación, ejecución y finalización', 'Solo en la finalización'], a: 2 },
+        { q: '¿Qué son los procedimientos analíticos?', o: ['Pruebas de controles internos', 'Evaluaciones de información financiera mediante análisis de relaciones plausibles', 'Cálculos estadísticos complejos', 'Entrevistas con la dirección'], a: 1 },
+        { q: '¿Qué tipo de datos se utilizan en los procedimientos analíticos?', o: ['Solo datos financieros', 'Solo datos no financieros', 'Datos financieros y no financieros', 'Solo datos históricos'], a: 2 },
+        { q: '¿Qué debe investigar el auditor ante fluctuaciones significativas?', o: ['Solo el monto', 'La naturaleza, causa y consistencia con otra información', 'Nada, son normales', 'Solo comparar con el año anterior'], a: 1 },
+        { q: '¿En qué fase se usan los procedimientos analíticos para identificar áreas de riesgo?', o: ['Finalización', 'Planeación (evaluación de riesgo)', 'Ejecución', 'Reporte'], a: 1 },
+        { q: '¿Qué busca confirmar el auditor en la finalización de la auditoría?', o: ['Que no hay errores', 'Que los estados financieros guardan coherencia lógica', 'Que la empresa tiene ganancias', 'Que se cumplen todas las normas'], a: 1 },
+        { q: '¿Cuál es un ejemplo de procedimiento analítico sustantivo?', o: ['Observar el conteo de inventario', 'Multiplicar unidades vendidas por el precio promedio', 'Solicitar confirmaciones de saldos', 'Revisar políticas contables'], a: 1 },
+        { q: '¿De qué depende la fiabilidad de los datos utilizados en un procedimiento analítico?', o: ['Del tamaño de la empresa', 'De su fuente, disponibilidad y relevancia', 'Del número de empleados', 'Del año fiscal'], a: 1 },
+        { q: '¿Qué deben considerar los procedimientos analíticos sustantivos según la NIA 520?', o: ['Solo el costo del procedimiento', 'El carácter apropiado, la fiabilidad de los datos y el desarrollo de expectativas', 'Solo la opinión de la dirección', 'El tamaño de la muestra únicamente'], a: 1 }
     ],
     '530': [
-        { q: 'Que es el muestreo de auditoria?', o: ['Probar 100%', 'Aplicar procedimientos a <100% de poblacion', 'Seleccionar importantes', 'Metodo obligatorio'], a: 1 },
-        { q: 'Que evalua el auditor segun parrafo 15?', o: ['Solo tamano', 'Resultados y base razonable', 'Solo incorrecciones', 'Opinion del cliente'], a: 1 },
-        { q: 'Que hacer con desviaciones?', o: ['Ignorar', 'Investigar naturaleza y causa', 'Cerrar auditoria', 'Eliminar muestra'], a: 1 },
-        { q: 'Que es una anomalia?', o: ['Error sistematico', 'Hecho aislado no representativo', 'Error siempre ocurre', 'Mejora'], a: 1 },
-        { q: 'Con que comparar incorrecciones extrapoladas?', o: ['Presupuesto', 'Incorreccion tolerable', 'Ano anterior', 'Director'], a: 1 }
-    ],
-    'tema': [
-        { q: 'Objetivo de evaluacion de resultados?', o: ['Reducir tiempo', 'Determinar base razonable para conclusion', 'Eliminar muestras', 'Aprobar automaticamente'], a: 1 },
-        { q: 'Que hacer primero al encontrar incorrecciones?', o: ['Extrapolar', 'Investigar naturaleza y causa', 'Cerrar auditoria', 'Solicitar ajustes'], a: 1 },
-        { q: 'Que pasa si errores superan tolerable?', o: ['Se aprueba', 'Tomar acciones correctivas', 'No hay problema', 'Se cierra'], a: 1 }
+        { q: '¿Qué es el muestreo de auditoría?', o: ['Probar el 100% de los elementos', 'Aplicar procedimientos a menos del 100% de una población relevante', 'Seleccionar solo los elementos más importantes', 'Un método estadístico obligatorio'], a: 1 },
+        { q: '¿Qué debe evaluar el auditor según el párrafo 15 de la NIA 530?', o: ['Solo el tamaño de la muestra', 'Los resultados de la muestra y si proporcionan una base razonable', 'Solo las incorrecciones', 'La opinión del cliente'], a: 1 },
+        { q: '¿Qué debe hacer el auditor con las desviaciones detectadas en pruebas de control?', o: ['Ignorarlas si son pequeñas', 'Investigar su naturaleza y causa', 'Cerrar la auditoría', 'Eliminar la muestra'], a: 1 },
+        { q: '¿Qué es una anomalía en el muestreo de auditoría?', o: ['Un error sistemático', 'Un hecho aislado no representativo de la población', 'Un error que siempre ocurre', 'Una mejora en los controles'], a: 1 },
+        { q: '¿Qué debe hacer el auditor con las incorrecciones encontradas en pruebas de detalle?', o: ['Reportarlas sin más análisis', 'Extrapolarlas a toda la población', 'Ignorarlas si son pequeñas', 'Solo documentarlas'], a: 1 },
+        { q: '¿Con qué debe compararse la incorrección extrapolada?', o: ['Con el presupuesto de la empresa', 'Con la incorrección tolerable del diseño', 'Con los resultados del año anterior', 'Con la opinión del director'], a: 1 },
+        { q: '¿Qué sucede si los errores encontrados superan la incorrección tolerable?', o: ['Se aprueba la auditoría sin cambios', 'Se deben solicitar ajustes o modificar los procedimientos', 'No hay ningún problema', 'Se cierra el caso'], a: 1 },
+        { q: '¿Cuáles son ejemplos de acciones correctivas ante errores significativos?', o: ['Solo modificar la opinión de auditoría', 'Solicitar ajustes o modificar la naturaleza, momento y extensión de los procedimientos', 'No hacer nada', 'Eliminar la muestra'], a: 1 },
+        { q: '¿Qué tipo de muestreo permite aplicar la NIA 530?', o: ['Solo estadístico', 'Solo no estadístico', 'Estadístico o no estadístico', 'Ninguno'], a: 2 },
+        { q: '¿Cuál es la primera etapa del proceso de muestreo?', o: ['Extrapolar los errores', 'Diseñar y seleccionar la muestra', 'Cerrar la auditoría', 'Solicitar ajustes'], a: 1 }
     ]
 };
 
